@@ -1,8 +1,6 @@
 //@ts-check
 'strict mode'
 // my change 4
-function getValue( condition) { 
-    if (condition) { 
         //var value = "blue"; // other code return value; 
         let value = "blue"; // other code return value; 
     } 
