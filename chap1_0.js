@@ -1,6 +1,6 @@
 //@ts-check
 'strict mode'
-// my change 4
+// my change 5
         //var value = "blue"; // other code return value; 
         let value = "blue"; // other code return value; 
     } 
