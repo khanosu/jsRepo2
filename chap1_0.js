@@ -1,7 +1,7 @@
 //@ts-check
 'strict mode'
-// my change 7
-        //var value = "blue"; // other code return value; 
+// my change 13
+1       //var value = "blue"; // other code return value; 
         let value = "blue"; // other code return value; 
     } 
     else { // value exists here with a value of undefined return null; 
