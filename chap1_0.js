@@ -1,16 +1,13 @@
-//@ts-check
-'strict mode'
 // my change 16
-1       //var value = "blue"; // other code return value; 
-        let value = "blue"; // other code return value; 
+function getValue(condition) {
+    if (condition) {
+        var value = "blue"; // other code 
+    }
+    else { // value exists here with a value of undefined 
     } 
-    else { // value exists here with a value of undefined return null; 
-
-    } // value exists here with a value of undefined 
-
-    console.log(`value = ${value}`);
+    // value exists here with a value of undefineda
+    console.log(`vale: ${value}`);
 }
 
 getValue(true);
 getValue(false);
-
