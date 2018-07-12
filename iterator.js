@@ -32,3 +32,11 @@ while(true){
     if(a.done === true) break;
     console.log(`value: ${a.value}`); 
 }
+
+console.log("---   ---   ---");
+
+while(true){
+    var a = it.next();
+    if(a.done === true) break;
+    console.log(`value: ${a.value}`); 
+}
