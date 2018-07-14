@@ -15,7 +15,9 @@ console.log(car1.make);
 console.log(car2.model);
 console.log(car2.make);
 
-//car1.make = 'GM';
+//car1.make = 'GM'; // this will shadow the prototype "make" property
+
+//This is the correct way.
 Car.prototype.make = 'GM';
 
 
