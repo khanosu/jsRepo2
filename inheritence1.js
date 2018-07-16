@@ -1,22 +1,30 @@
 //@ts-check
 'use strict'
 
-function Rectangle(length, width){
-    this.lenght = length;
-    this.width = width;
+function Rectangle(length, width) {
+    this._length = length;
+    this._width = width;
 }
 
-Rectangle.prototype.toString = function(){
-    return "[Rectangle " + this.lenght + "x" + this.width + "]";
+Rectangle.prototype.toString = function () {
+    return "[Rectangle " + this.length + "x" + this.width + "]";
 }
 
-Rectangle.prototype.getLength = function(){
-    return this.lenght;
-}
+Object.defineProperty(Rectangle.prototype, "length", {
+    get: function () {
+        return this._length;
+    },
+    enumerable: true,
+    configurable: true
+});
 
-Rectangle.prototype.setLength = function(length){
-    this.lenght = length;
-}
+Object.defineProperty(Rectangle.prototype, "width", {
+    get: function () {
+        return this._width;
+    },
+    enumerable: true,
+    configurable: true
+});
 
 //---   ---   ---   ---
 
@@ -33,12 +41,16 @@ Square.prototype = Object.create(
             writable: true
 
         }
-
     });
 
 Square.prototype.toString = function(){
-    return "[Square " + this.getLength() + "x" + this.getLength() + "]";
+    return "[Square " + this.length + "x" + this.width + "]";
 }
 
 let square1 = new Square(2.5);
 console.log(square1.toString());
+
+let rectangle1 = new Rectangle(8.5, 3.5);
+console.log('length: ' + rectangle1.length);
+console.log('width: ' + rectangle1.width);
+console.log(rectangle1.toString());
