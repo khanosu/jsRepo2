@@ -47,10 +47,14 @@ Square.prototype.toString = function(){
     return "[Square " + this.length + "x" + this.width + "]";
 }
 
+//---   ---   ---   ---
+
 let square1 = new Square(2.5);
 console.log(square1.toString());
 
+//---   ---   ---   ---
+
 let rectangle1 = new Rectangle(8.5, 3.5);
+console.log(rectangle1.toString());
 console.log('length: ' + rectangle1.length);
 console.log('width: ' + rectangle1.width);
-console.log(rectangle1.toString());
