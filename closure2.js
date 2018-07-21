@@ -14,8 +14,6 @@ function myFun(name){
     };
 }
 
-console.log(myFun("Gobucks"));
-console.log("---   ---   ---")
 
 var fun1 = myFun("Foo");
 
