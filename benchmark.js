@@ -11,7 +11,7 @@ function main(){
     }
     let end = Date.now();
     let duration = (end - start)/1000;
-    console.log('JavaScript looped %d tiems in %d seconds', cycles, duration);
+    console.log('JavaScript looped %d tiems in %f seconds', cycles, duration);
 }
 
 main();
